@@ -1,0 +1,22 @@
+{
+  "name": "bookapp",
+  "version": "1.0.0",
+  "description": "Full Stack Project",
+  "main": "index.js",
+  "scripts": {
+    "install:client": "cd client && npm install",
+    "install:server": "cd node-template && npm install",
+    "install:app": "npm-run-all install:client install:server",
+    "start:client": "npm run dev --prefix client",
+    "start:server": "npm start --prefix node-template",
+    "start:app": "npm-run-all --parallel start:server start:client",
+    "build:client": "cd client && npm run build",
+    "start:app:prod": "cd server && npm start",
+    "heroku-postbuild": "npm-run-all install:app build:client"
+  },
+  "author": "Jeanpol Giraldo",
+  "license": "ISC",
+  "dependencies": {
+    "npm-run-all": "^4.1.5"
+  }
+}

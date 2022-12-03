@@ -1,0 +1,31 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.login_container {
+  width: 25%;
+  margin: 10% auto;
+}
+
+.createUserStyle {
+  margin: 3% 0%;
+}
+
+.createUser_container {
+  width: 50%;
+  margin: 5% auto;
+}
+
+.profile_container {
+  width: 70%;
+  display: flex;
+  margin: 5rem auto;
+  gap: 5rem;
+}
+
+.list_book {
+  width: 100%;
+  padding-top: 5rem;
+}
